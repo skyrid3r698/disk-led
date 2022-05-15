@@ -9,7 +9,7 @@ while true; do
   then
     echo greater
     echo 0 > /sys/class/gpio/gpio4/value
-    sleep 0.05
+    sleep 0.06
     echo 1 > /sys/class/gpio/gpio4/value
   else
     echo same
