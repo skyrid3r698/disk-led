@@ -6,6 +6,6 @@ After that you can run the led.sh to show the disc activity on your led. Until n
 ## setup guide:
 1. clone the repo
 2. save it somewhere safe and make both .sh files executable with "sudo chmod +x led.sh && chmod +x led-int.sh"
-3. create a crontab like this: "@reboot /home/ubuntu/disk-led/int-led.sh
+3. create a crontab like this: "@reboot /home/ubuntu/disk-led/led-int.sh"
 4. run led.sh
 5. watch the led glow while disk-io
