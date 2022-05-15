@@ -8,6 +8,8 @@ while true; do
   if [ $TEST -gt $TEST2 ]
   then
     echo greater
+    echo 0 > /sys/class/gpio/gpio4/value
+    sleep 0.05
     echo 1 > /sys/class/gpio/gpio4/value
   else
     echo same
@@ -19,3 +21,4 @@ while true; do
   done < "/sys/block/sda/stat"
 wait
 done
+
